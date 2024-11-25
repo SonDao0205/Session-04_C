@@ -14,21 +14,20 @@ int main(){
         printf("So tien dien tieu thu la : %.2f", tien_dien); 
     }
     else if(so_dien < 100){
-        tien_dien = so_dien * 15000;
+        tien_dien = 50 * 10000 + (so_dien - 50) * 15000;
         printf("So tien dien tieu thu la : %.2f", tien_dien);
     }
     else if(so_dien < 150){
-        tien_dien = so_dien * 20000;
+        tien_dien = 50 * 10000 + 50 * 15000 + (so_dien - 100) * 20000;
         printf("So tien dien tieu thu la : %.2f", tien_dien);
     }
     else if(so_dien < 200){
-        tien_dien = so_dien * 25000;
+        tien_dien = 50 * 10000 + 50 * 15000 + 50 * 20000 + (so_dien - 150) * 25000;
         printf("So tien dien tieu thu la : %.2f", tien_dien);
     }
     else {
-        tien_dien = so_dien * 30000;
+        tien_dien = 50 * 10000 + 50 * 15000 + 50 * 20000 + 50 * 25000 + (so_dien - 150) * 30000;
         printf("So tien dien tieu thu la : %.2f", tien_dien);
     }
     return 0;
-    
 }
